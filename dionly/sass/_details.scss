@@ -1,0 +1,174 @@
+.detailsmain{
+    margin-top: 5px;
+    background: #F1F1F1;
+    width: 100%;
+    .topa{
+        height: 50px;
+        width: 100%;
+        font: 12px/50px ""; 
+        a{
+            color: #222;
+        }
+        a:hover{
+            color: #DB3962;
+        } 
+        span{
+            margin-left: 5px;
+        }
+    }
+    .productpath{
+        border: 1px solid #D2D2D2;;
+        border-top: 2px solid #FFC0C1;;
+        padding-top: 17px;
+        background-color: white;
+        width: 100%;
+        height: 598px;
+        .leftimg{      
+            float: left;
+            width: 502px;
+            height: 564px;
+            margin-left: 20px;
+            position: relative;
+            border-right: 1px solid darkcyan;
+        }
+    }
+    .smalltu{
+        width: 500px;
+        height: 420px;
+        position: relative;
+        img{
+            width: 500px;
+            height: 420px;
+        }
+    }
+    .smalfang{
+        position: absolute;
+        background: rgba(2, 2, 2, 0.1);
+        left: 0px;
+        top: 0px;
+        visibility: hidden;
+        border: 1px solid #C0C0C0;
+        cursor: crosshair;
+    }
+    .ulwrap{
+        margin-top: 20px;
+        position: relative;
+        width: 385px;
+        height: 92px;
+        overflow: hidden;
+        left: 64px;
+    }
+    ul{ 
+        width:650px;
+        height: 92px;
+        position: absolute;
+        left: 10;
+        li{
+            width: 92px;
+            height: 92px;
+            float: left;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+        .redborder{
+            width: 92px;
+            height: 92px;
+            border: 1px solid #C11E20;
+        }
+        img{
+            width: 90px;
+            height: 90px;
+        }        
+    }
+    button{
+            position: absolute;
+            width: 14px;
+            height: 30px;
+            border: 0;
+            background-color: white;
+            font: 30px/30px "";
+            bottom: 66px;
+        }
+        .leftbtn{          
+            left: 34px;           
+        }
+        .rightbtn{
+            right: 34px;           
+        }
+}
+   .detpng{
+    width: 100%;
+    height: 9740px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+}
+.bigtu{
+    display: none;
+    width: 430px;
+    height: 420px;
+    position: absolute;
+    left: 584px;
+    top: 262px;
+    border: 1px solid sandybrown;
+    overflow: hidden;
+    img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 700px;
+        height: 600px;
+    }
+}
+.rightsthing{
+    float: right;
+    width: 600px;
+    height: 491px;
+    padding: 15px 5px;
+    p{
+       font: 14px/26px "";
+       height: 26px;
+       width: 100%;
+       margin-left: 40px;
+       s{
+        font-weight: 700;
+        color: #8C8C8C;
+        }
+    }
+    span{
+        color:#DB3962;
+    }
+    .btncart{
+        width: 450px;
+        height: 60px;
+        border-top: 1px dashed #B9B9B9;
+        margin-left: 40px;
+        margin-top: 20px;
+        img{
+            width: 126px;
+            height: 42px;
+            margin-top: 30px;
+            margin-left: 50px;
+            cursor: pointer;
+            float: left;
+        }
+        .gotocart{
+            width: 126px;
+            height: 42px;
+            float: left;
+            border: 1px solid #ADFF2F;
+            background-color:#DB3962; 
+            margin-top: 30px;
+            margin-left: 100px;
+            cursor: pointer;
+            font:18px/42px "黑体" ;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+        } 
+    }
+       
+
+}

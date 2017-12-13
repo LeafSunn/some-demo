@@ -1,0 +1,205 @@
+
+.cartmain{
+    padding-top: 20px;
+    background-color: #FEF1EF;
+    width: 100%;
+    padding-bottom: 20px ;
+    .cartbox{
+        overflow: hidden;
+        width: 100%;
+        border-top:3px solid #FFC0C1;
+        background-color: white;
+        padding:10px 20px 0 20px;
+    }
+    .boxtop{
+        width: 1140px;
+        height: 41px;       
+        background: url(../img/carticon.jpg) no-repeat left center;
+        border-bottom: 1px solid #DEDEDE;
+        font: 900 12px/41px "";
+        text-indent: 30px;
+        margin-bottom: 20px;
+    }
+    .boximg{
+        display: none;
+        width: 1178px;
+        height: 446px;
+        background: url('http://www.dionly.com/images/cart/cartnone.jpg') no-repeat center;
+        position: relative;
+        p{
+            width: 300px;
+            height: 30px;
+            font: 14px/30px "";
+            text-indent: 12px;
+            color: #888888;
+            border: 1px solid #CCCCCC;
+            background-color: #FEF1EF;
+            position: absolute;
+            top: 166px;
+            right: 210px;
+        }
+    }
+    .cartlist{
+        width: 1140px;
+        ul{
+            width: 100%;
+            height: 40px;
+        }
+        li{
+            height: 40px;
+            float: left;
+            font: 12px/40px "";
+            text-align: center;
+        }
+        .licartimg{
+            width: 120px;
+        }
+        .licartname{
+            width: 210px;
+        }
+        .writeword{
+            width: 310px;
+        }
+        .lastval{
+            width: 125px;
+        }
+        .price{
+            width: 125px;
+        }
+        .getmoney{
+            width: 125px;
+        }
+        .del{
+            width: 125px;
+        }
+    }
+    .listbox{
+        width: 100%;
+    }
+    .cartli{
+        background-color: #EBEBEB;
+        width: 100%;
+        height: 120px;
+    }
+    .cartliimg{
+        width: 120px;
+        float: left;
+        height: 120px;
+        img{
+            width: 120px;
+            height: 120px;
+        }
+    }
+    .cartliname{
+        width: 210px;
+        float: left;
+        height: 120px;
+        font: 12px/120px "";
+        text-align: center;
+    }
+    .cartwriteword{
+        width: 310px;
+        float: left;
+        height: 120px;
+        font: 12px/120px "";
+        text-align: center;
+    }
+    .cartlastval{
+        width: 125px;
+        float: left;
+        height: 120px;
+        font: 12px/120px "";
+        text-align: center;
+    }
+    .cartprice{
+        width: 125px;
+        float: left;
+        height: 120px;
+        font: 12px/120px "";
+        text-align: center;
+    }
+    .cartgetmoney{
+        width: 125px;
+        float: left;
+        height: 120px;
+        font: 12px/120px "";
+        text-align: center;
+    }
+    .cartdel{
+        width: 125px;
+        float: left;
+        height: 120px;
+        font: 12px/120px "";
+        text-align: center;
+        cursor: pointer;
+    }
+    .cartdel:hover{
+        color: #D0383A;
+    }
+    .calculate{
+        margin-top: 20px;
+        height: 30px;
+        width: 100%;
+        margin-bottom: 14px;
+    }
+    .allList{
+        width: 120px;
+        height: 30px;
+        float: left;
+        font: 14px/30px "";
+        color: #222;
+        span{
+            font-weight: 700;
+            color: crimson;
+        }
+    }
+    .nomoney{
+        width: 100px;
+        height: 30px;
+        float: left;
+        font: 14px/30px "";
+        color: #222;
+    }
+    .nomoney:hover{
+        color: #DC143C;
+    }
+    .goindex{
+        width: 100px;
+        height: 30px;
+        float: left;
+        font: 14px/30px "";
+        color: #DC143C;;
+    }
+    .gologin{
+        width: 50px;
+        height: 28px;
+        float: right;
+        font:700 16px/28px "";
+        color: #A30101;
+        border: 1px solid #C11E20;
+        border-radius: 3px;
+        text-align: center;
+    }
+    .account{
+        width: 160px;
+        height: 30px;
+        float: right;
+        font: 14px/30px "";
+        color: #222;
+        span{
+            font-weight: 700;
+            color: #DC143C;
+        }
+    }
+}
+html,body{
+    height: 100%;
+}
+//.graybox{  
+//  width: 100%;
+//  height: 100%;
+//  position: fixed;    
+//  z-index: 999999;
+//  background: red;
+//  opacity: 0.5;
+//}

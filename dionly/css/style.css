@@ -1,0 +1,1888 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+.margin {
+  width: 1180px;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+.over {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.valign:after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle; }
+
+.valign img {
+  vertical-align: middle; }
+
+.clear {
+  zoom: 1; }
+
+.clear:before {
+  content: "";
+  display: table; }
+
+.clear:after {
+  content: "";
+  clear: both;
+  display: block; }
+
+.topbar {
+  width: 100%;
+  height: 38px;
+  background: #f3f3f3; }
+  .topbar .left {
+    float: left;
+    width: 550px;
+    height: 38px;
+    line-height: 38px; }
+    .topbar .left span {
+      font: 10px/38px ""; }
+    .topbar .left a {
+      font: 10px/38px "";
+      color: #222; }
+    .topbar .left a:hover {
+      color: #DB3962; }
+  .topbar .right {
+    float: right;
+    width: 630px;
+    height: 38px;
+    line-height: 38px;
+    overflow: hidden;
+    text-align: right; }
+    .topbar .right a {
+      text-align: right;
+      font: 10px/38px "";
+      color: #222;
+      margin: 0 10px; }
+    .topbar .right a:hover {
+      color: #DB3962; }
+    .topbar .right .user {
+      padding-left: 20px;
+      background: url(../img/icon.png) no-repeat 0 -20px; }
+    .topbar .right .zhengpin {
+      padding-left: 20px;
+      background: url(../img/icon.png) no-repeat 0 -39px; }
+    .topbar .right .yuyue {
+      padding-left: 20px;
+      background: url(../img/icon.png) no-repeat 0 -39px;
+      color: #DB3962; }
+    .topbar .right .phone {
+      padding-left: 22px;
+      background: url(../img/icon.png) no-repeat 0 -64px; }
+    .topbar .right .wechat {
+      padding-left: 25px;
+      background: url(../img/icon.png) no-repeat 0 -96px; }
+    .topbar .right .minblog {
+      padding-left: 26px;
+      background: url(../img/icon.png) no-repeat 0 -129px; }
+    .topbar .right .cart span {
+      text-align: center;
+      color: #A30101; }
+
+.nav {
+  width: 100%;
+  height: 148px;
+  padding-top: 5px; }
+  .nav .top {
+    width: 100%;
+    height: 90px; }
+    .nav .top .logo {
+      float: left;
+      width: 200px;
+      height: 90px; }
+    .nav .top .code {
+      float: right;
+      width: 240px;
+      height: 90px; }
+    .nav .top .center {
+      float: right;
+      width: 550px;
+      height: 90px;
+      overflow: hidden; }
+  .nav .bottom {
+    margin-bottom: 0;
+    height: 38px;
+    position: relative;
+    bottom: -20px; }
+    .nav .bottom .list {
+      float: left;
+      width: 200px;
+      height: 38px;
+      text-indent: 18px;
+      background: #C11E20 url(../img/icon2.png) no-repeat 160px 0;
+      font: 700 14px/38px "";
+      color: #FFF;
+      cursor: pointer; }
+    .nav .bottom .list:hover {
+      background: #C11E20 url(../img/icon2.png) no-repeat 160px -38px; }
+    .nav .bottom .subNav {
+      margin-bottom: 0;
+      height: 38px;
+      width: 100%; }
+      .nav .bottom .subNav li {
+        float: left;
+        margin-right: 50px;
+        height: 38px;
+        font: 700 14px/38px ""; }
+      .nav .bottom .subNav a {
+        color: #222; }
+      .nav .bottom .subNav a:hover {
+        color: #DB3962; }
+    .nav .bottom .subNav li:first-child {
+      padding-left: 50px; }
+    .nav .bottom img {
+      position: absolute;
+      top: -10px;
+      right: 0; }
+    .nav .bottom .subMenu {
+      position: absolute;
+      z-index: 99;
+      width: 200px;
+      top: 33px; }
+      .nav .bottom .subMenu a {
+        color: white; }
+      .nav .bottom .subMenu a:hover {
+        color: #DB3962; }
+
+.subMenu {
+  display: none; }
+  .subMenu li {
+    padding: 8px 5px 1px 5px;
+    width: 200px;
+    line-height: 25px;
+    font: 12px/25px ""; }
+    .subMenu li a {
+      width: 50px;
+      margin-left: 12px;
+      float: left; }
+
+.subMenu li a:first-child {
+  height: 100%;
+  width: 36px; }
+
+.subMenu li:nth-child(1) {
+  height: 90px;
+  background-color: #383333; }
+
+.subMenu li:nth-child(2) {
+  height: 90px;
+  background-color: #312d2d; }
+
+.subMenu li:nth-child(3) {
+  height: 66px;
+  background-color: #383333; }
+
+.subMenu li:nth-child(4) {
+  height: 66px;
+  background-color: #312d2d; }
+
+.subMenu li:nth-child(5) {
+  height: 40px;
+  background-color: #383333; }
+
+.subMenu li:nth-child(6) {
+  height: 40px;
+  background-color: #383333; }
+
+.subMenu li:nth-child(7) {
+  height: 40px;
+  background-color: #312d2d; }
+
+.subMenu li:nth-child(7) a:last-child {
+  width: 100px;
+  margin-left: 25px; }
+
+.subMenu li:nth-child(7) a:first-child {
+  width: 50px; }
+
+.nav .search {
+  margin-top: 18px;
+  margin-left: 150px;
+  width: 260px;
+  height: 30px;
+  border: 1px solid #6D6C6C; }
+  .nav .search input {
+    float: left;
+    width: 198px;
+    height: 28px;
+    line-height: 28px;
+    color: #7D7D7D;
+    border: none;
+    text-indent: 5px; }
+  .nav .search button {
+    border: 0;
+    float: right;
+    width: 60px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
+    border-left: 1px solid #6D6C6C;
+    background-color: #6D6C6C;
+    cursor: pointer; }
+.nav .keyword {
+  float: left;
+  margin-top: 10px;
+  margin-left: 150px;
+  width: 228px;
+  height: 30px; }
+  .nav .keyword a {
+    font: 10px/30px "";
+    color: #7D7D7D;
+    margin-right: 12px; }
+  .nav .keyword a:hover {
+    color: #DB3962; }
+
+.pic {
+  width: 100%;
+  height: 85px;
+  background: url(../img/security.jpg) center center no-repeat; }
+
+.service {
+  margin: 0 auto;
+  border-top: 1px solid #CCCCCC;
+  padding: 15px 0;
+  height: 161px;
+  background: url(../img/shouhou.png) no-repeat top 10px center #E9E9E9; }
+  .service li {
+    margin-top: -10px;
+    float: left;
+    width: 195px;
+    height: 130px;
+    border-right: 1px solid #CCCCCC;
+    padding-top: 10px;
+    padding-left: 54px; }
+    .service li span {
+      float: left;
+      width: 145px;
+      font: 12px/30px "";
+      font-weight: 700; }
+    .service li a {
+      float: left;
+      width: 145px;
+      font: 12px/24px "";
+      color: #555; }
+    .service li a:hover {
+      color: #DB3962; }
+
+.service li:first-child {
+  border-left: 1px solid #CCCCCC; }
+
+.address {
+  overflow: hidden;
+  padding: 15px 0;
+  height: 96px;
+  background-color: #333;
+  color: #B9B9B9; }
+  .address .left {
+    float: left;
+    font: 12px/30px ""; }
+  .address .right {
+    float: right;
+    font: 12px/30px ""; }
+
+.certification {
+  height: 83px;
+  padding: 15px 0;
+  background: url(../img/footicon.gif) no-repeat center; }
+
+.friendlink {
+  padding: 15px 0;
+  width: 100%;
+  height: 136px;
+  border-top: 1px solid #CCCCCC;
+  color: #999999;
+  background: #F0F0F0;
+  color: #999; }
+  .friendlink .top {
+    height: 80px; }
+    .friendlink .top .left {
+      float: left;
+      width: 70px;
+      font: 700 12px/25px ""; }
+    .friendlink .top .right {
+      float: left;
+      width: 1100px;
+      height: 50px; }
+  .friendlink a {
+    font: 12px/25px "";
+    color: #999;
+    margin-right: 8px; }
+  .friendlink a:hover {
+    color: #DB3962; }
+  .friendlink .long {
+    margin-right: 24px; }
+  .friendlink .bottom {
+    width: 1170px;
+    font: 12px/25px "";
+    text-align: right; }
+
+.sidebar {
+  width: 64px;
+  position: fixed;
+  right: 5px;
+  bottom: 100px;
+  z-index: 300; }
+  .sidebar a {
+    text-decoration: none; }
+
+.sidebar li {
+  list-style: none;
+  display: block;
+  width: 64px;
+  height: 64px;
+  background: #c11e20;
+  margin-top: 2px;
+  position: relative; }
+  .sidebar li .img {
+    height: 40px;
+    overflow: hidden; }
+    .sidebar li .img img {
+      display: block;
+      margin: 10px auto; }
+  .sidebar li span {
+    display: block;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-family: 宋体;
+    font-size: 12px;
+    color: #fff; }
+.sidebar li:hover {
+  background-color: #D0383A; }
+.sidebar .vm {
+  position: absolute;
+  right: 66px;
+  top: 225px;
+  display: none; }
+
+.movewindow {
+  display: none;
+  border-radius: 5px;
+  border: 1px solid #222;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: white;
+  width: 413px;
+  height: 465px; }
+  .movewindow .topline {
+    height: 43px;
+    width: 100%;
+    cursor: move;
+    background: #4697ef; }
+    .movewindow .topline img {
+      float: left;
+      height: 54px;
+      width: 54px;
+      border: 1px solid #222222;
+      margin-top: -12px;
+      background-color: white;
+      margin-left: 20px; }
+    .movewindow .topline p {
+      float: left;
+      height: 43px;
+      width: 300px;
+      margin-left: 8px;
+      font: 700 12px/43px "";
+      color: white; }
+    .movewindow .topline i {
+      float: right;
+      display: block;
+      width: 13px;
+      height: 13px;
+      background: url(../img/chaticon.png) no-repeat;
+      background-position: -64px -3px;
+      margin-top: 12px;
+      margin-right: 15px;
+      cursor: pointer; }
+    .movewindow .topline i:hover {
+      background: url(../img/chaticon.png) no-repeat;
+      background-position: -64px -23px; }
+  .movewindow .information {
+    margin-top: 20px;
+    width: 411px; }
+    .movewindow .information span {
+      float: left;
+      height: 24px;
+      width: 36px; }
+    .movewindow .information input {
+      float: left;
+      margin-left: 6px;
+      width: 300px;
+      height: 24px; }
+    .movewindow .information .xinghao {
+      width: 5px;
+      color: red;
+      margin-left: 30px;
+      margin-right: 6px; }
+    .movewindow .information .inf-name {
+      width: 400px;
+      height: 24px;
+      font: 12px/24px "";
+      margin-bottom: 4px; }
+    .movewindow .information .inf-tel {
+      width: 400px;
+      height: 24px;
+      font: 12px/24px "";
+      margin-bottom: 4px; }
+    .movewindow .information .inf-email {
+      width: 400px;
+      height: 24px;
+      font: 12px/24px "";
+      margin-bottom: 4px; }
+      .movewindow .information .inf-email span {
+        margin-left: 40px; }
+    .movewindow .information .inf-message {
+      width: 400px;
+      height: 24px;
+      font: 12px/24px "";
+      margin-bottom: 140px; }
+      .movewindow .information .inf-message textarea {
+        margin-left: 6px;
+        width: 300px;
+        height: 140px; }
+  .movewindow button {
+    border: 1px solid #222;
+    background-color: white;
+    padding: 0;
+    width: 60px;
+    text-align: center;
+    height: 32px;
+    margin-left: 200px;
+    cursor: pointer; }
+  .movewindow .rederror1 {
+    display: none;
+    height: 20px;
+    width: 200px;
+    font: 700 12px/20px "";
+    color: red;
+    margin-left: 80px; }
+  .movewindow .rederror2 {
+    display: none;
+    height: 20px;
+    width: 200px;
+    font: 700 12px/20px "";
+    color: red;
+    margin-left: 80px; }
+  .movewindow .rederror3 {
+    display: none;
+    height: 20px;
+    width: 200px;
+    font: 700 12px/20px "";
+    color: red;
+    margin-left: 80px; }
+  .movewindow .rederror4 {
+    display: none;
+    height: 20px;
+    width: 200px;
+    font: 700 12px/20px "";
+    color: red;
+    margin-left: 80px;
+    margin-top: -24px; }
+  .movewindow .submitsuccess {
+    display: none;
+    width: 200px;
+    height: 24px;
+    font: 16px/24px "";
+    color: #449D44;
+    margin-left: 190px; }
+
+.banner {
+  position: relative;
+  height: 420px; }
+  .banner .scroll {
+    width: 100%;
+    position: absolute;
+    height: 420px; }
+  .banner .firstimg {
+    opacity: 1;
+    height: 420px;
+    width: 100%;
+    position: absolute;
+    background: url("http://www.dionly.com/upload/image/20151028/small20151028131103.jpg") 50% 0 no-repeat; }
+  .banner .secondimg {
+    opacity: 0;
+    height: 420px;
+    width: 100%;
+    position: absolute;
+    background: url("http://dionly.com/resources/images/home/banner/2.jpg") 50% 0 no-repeat; }
+  .banner .btns {
+    position: absolute;
+    left: 50%;
+    bottom: 4px;
+    z-index: 20;
+    width: 100px;
+    height: 30px;
+    margin-left: -18px; }
+    .banner .btns .firstbtn {
+      cursor: pointer;
+      position: absolute;
+      z-index: 30;
+      left: 10px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      margin-left: 10px;
+      background-color: #9D9D9D; }
+    .banner .btns .secondbtn {
+      cursor: pointer;
+      position: absolute;
+      z-index: 30;
+      left: 40px;
+      float: left;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      margin-left: 10px;
+      background-color: #9D9D9D; }
+    .banner .btns .orange {
+      background-color: darkorange; }
+
+.activity {
+  width: 100%;
+  height: 210px;
+  padding-top: 18px; }
+  .activity div {
+    padding: 4px;
+    height: 200px;
+    border: 1px solid #ddd;
+    text-align: center; }
+    .activity div a:hover {
+      color: #DB3962; }
+  .activity .left {
+    float: left;
+    width: 320px; }
+  .activity .center {
+    margin-left: 15px;
+    float: left;
+    width: 510px; }
+  .activity .right {
+    float: right;
+    width: 320px; }
+
+.diamondSearch {
+  margin-top: 26px;
+  height: 159px;
+  margin-bottom: 26px;
+  border: 1px solid #ddd;
+  overflow: hidden; }
+  .diamondSearch .leftimg {
+    width: 616px;
+    float: left;
+    height: 159px;
+    background-color: #f9f9f9; }
+    .diamondSearch .leftimg img {
+      margin: 18px 0 0 15px; }
+  .diamondSearch .rightsearch {
+    width: 562px;
+    background: url(../img/bg1.png) no-repeat center;
+    height: 159px;
+    float: left; }
+  .diamondSearch .stoneWeight {
+    margin-top: 20px;
+    float: left;
+    width: 215px;
+    height: 33px; }
+    .diamondSearch .stoneWeight input {
+      float: left;
+      width: 40px;
+      height: 18px;
+      background-color: white; }
+    .diamondSearch .stoneWeight div {
+      float: left;
+      width: 20px;
+      height: 33px;
+      margin: 0 5px;
+      margin-top: 6px; }
+    .diamondSearch .stoneWeight .leftipt {
+      margin-top: 8px;
+      margin-left: 70px; }
+    .diamondSearch .stoneWeight .rightipt {
+      float: left;
+      margin-top: 8px;
+      margin-left: -10px; }
+    .diamondSearch .stoneWeight span {
+      float: left;
+      margin-top: 6px;
+      margin-left: 6px; }
+  .diamondSearch .color {
+    float: left;
+    width: 242px;
+    height: 33px;
+    margin-top: 26px;
+    margin-left: 78px; }
+    .diamondSearch .color a {
+      width: 29px;
+      height: 19px; }
+    .diamondSearch .color img {
+      float: left;
+      width: 29px;
+      height: 19px;
+      margin-right: 5px; }
+  .diamondSearch .burnishing {
+    margin-top: 14px;
+    margin-left: 66px;
+    float: left;
+    width: 215px;
+    height: 33px; }
+    .diamondSearch .burnishing a {
+      height: 19px;
+      width: 33px; }
+    .diamondSearch .burnishing img {
+      float: left;
+      width: 33px;
+      height: 19px;
+      margin-right: 4px; }
+  .diamondSearch .neatness {
+    float: left;
+    width: 242px;
+    height: 33px;
+    margin-top: 12px;
+    margin-left: 10px; }
+    .diamondSearch .neatness a {
+      width: 34px;
+      height: 19px; }
+    .diamondSearch .neatness img {
+      width: 34px;
+      height: 19px;
+      margin-right: 3px; }
+  .diamondSearch .searchimg {
+    width: 34px;
+    height: 33px; }
+    .diamondSearch .searchimg img {
+      width: 86px;
+      height: 32px;
+      margin-top: 6px;
+      margin-left: 200px; }
+
+.same1 {
+  height: 429px; }
+  .same1 .left {
+    position: relative;
+    float: left;
+    width: 321px;
+    height: 429px;
+    background: url("http://www.dionly.com/images/home/line3/1.jpg") no-repeat center; }
+  .same1 .center {
+    float: left;
+    width: 259px;
+    height: 429px; }
+    .same1 .center img {
+      width: 259px;
+      height: 429px; }
+  .same1 .right {
+    float: left;
+    width: 600px;
+    height: 429px; }
+  .same1 .topword {
+    position: absolute;
+    top: 180px;
+    padding: 12px 0 5px 0;
+    width: 200px;
+    height: 120px; }
+    .same1 .topword a {
+      width: 200px;
+      float: left;
+      margin-left: 30px;
+      margin-bottom: 10px;
+      font-size: 12px;
+      color: #222222; }
+    .same1 .topword a:hover {
+      color: #DB3962; }
+  .same1 .bottomword {
+    position: absolute;
+    top: 300px;
+    padding: 12px 0 5px 0;
+    width: 200px;
+    height: 120px; }
+    .same1 .bottomword a {
+      width: 200px;
+      float: left;
+      margin-left: 30px;
+      margin-bottom: 10px;
+      font-size: 12px;
+      color: #222222; }
+    .same1 .bottomword a:hover {
+      color: #DB3962; }
+  .same1 .righttop {
+    float: left;
+    width: 600px;
+    height: 211px; }
+  .same1 .righttopleft {
+    float: left; }
+    .same1 .righttopleft img {
+      width: 299px;
+      height: 211px; }
+  .same1 .righttopright {
+    float: left; }
+    .same1 .righttopright img {
+      width: 301px;
+      height: 211px; }
+  .same1 .rightbottom {
+    height: 218px;
+    width: 600px; }
+  .same1 .rightbottomleft {
+    float: left; }
+    .same1 .rightbottomleft img {
+      width: 200px;
+      height: 218px; }
+  .same1 .rightbottomcenter {
+    float: left; }
+    .same1 .rightbottomcenter img {
+      width: 195px;
+      height: 218px; }
+  .same1 .rightbottomright {
+    float: left; }
+    .same1 .rightbottomright img {
+      width: 205px;
+      height: 218px; }
+
+.whitesheep {
+  margin: 18px 0;
+  width: 1180px;
+  height: 116px; }
+  .whitesheep .left {
+    width: 586px;
+    float: left;
+    height: 100%; }
+    .whitesheep .left img {
+      width: 586px;
+      height: 100%; }
+  .whitesheep .right {
+    width: 594px;
+    float: left;
+    height: 100%; }
+    .whitesheep .right .rightleft {
+      float: left; }
+      .whitesheep .right .rightleft img {
+        width: 201px;
+        height: 116px; }
+    .whitesheep .right .rightcenter {
+      float: left; }
+      .whitesheep .right .rightcenter img {
+        width: 198px;
+        height: 116px; }
+    .whitesheep .right .rightright {
+      float: left; }
+      .whitesheep .right .rightright img {
+        width: 195px;
+        height: 116px; }
+
+.same2 {
+  height: 429px;
+  margin-bottom: 18px; }
+  .same2 .left {
+    position: relative;
+    float: left;
+    width: 321px;
+    height: 429px;
+    background: url("http://www.dionly.com/images/home/line5/1.jpg") no-repeat center; }
+  .same2 .right {
+    float: left;
+    width: 259px;
+    height: 429px; }
+    .same2 .right img {
+      width: 259px;
+      height: 429px; }
+  .same2 .center {
+    float: left;
+    width: 600px;
+    height: 429px; }
+  .same2 .topword {
+    position: absolute;
+    top: 180px;
+    padding: 12px 0 5px 0;
+    width: 200px;
+    height: 120px; }
+    .same2 .topword a {
+      width: 200px;
+      float: left;
+      margin-left: 30px;
+      margin-bottom: 10px;
+      font-size: 12px;
+      color: #222222; }
+    .same2 .topword a:hover {
+      color: #DB3962; }
+  .same2 .bottomword {
+    position: absolute;
+    top: 300px;
+    padding: 12px 0 5px 0;
+    width: 200px;
+    height: 120px; }
+    .same2 .bottomword a {
+      width: 200px;
+      float: left;
+      margin-left: 30px;
+      margin-bottom: 10px;
+      font-size: 12px;
+      color: #222222; }
+    .same2 .bottomword a:hover {
+      color: #DB3962; }
+  .same2 .centertop {
+    float: left;
+    width: 600px;
+    height: 211px; }
+  .same2 .centertopleft {
+    float: left; }
+    .same2 .centertopleft img {
+      width: 299px;
+      height: 211px; }
+  .same2 .centertopright {
+    float: left; }
+    .same2 .centertopright img {
+      width: 301px;
+      height: 211px; }
+  .same2 .centerbottom {
+    height: 218px;
+    width: 600px; }
+  .same2 .centerbottomleft {
+    float: left; }
+    .same2 .centerbottomleft img {
+      width: 200px;
+      height: 218px; }
+  .same2 .centerbottomcenter {
+    float: left; }
+    .same2 .centerbottomcenter img {
+      width: 195px;
+      height: 218px; }
+  .same2 .centerbottomright {
+    float: left; }
+    .same2 .centerbottomright img {
+      width: 205px;
+      height: 218px; }
+
+.same3 {
+  height: 429px;
+  margin-bottom: 18px; }
+  .same3 .left {
+    position: relative;
+    float: left;
+    width: 321px;
+    height: 429px;
+    background: url("http://www.dionly.com/images/home/line6/1.jpg") no-repeat center; }
+  .same3 .center {
+    float: left;
+    width: 259px;
+    height: 429px; }
+    .same3 .center img {
+      width: 259px;
+      height: 429px; }
+  .same3 .right {
+    float: left;
+    width: 600px;
+    height: 429px; }
+  .same3 .topword {
+    position: absolute;
+    top: 180px;
+    padding: 12px 0 5px 0;
+    width: 200px;
+    height: 120px; }
+    .same3 .topword a {
+      width: 200px;
+      float: left;
+      margin-left: 30px;
+      margin-bottom: 10px;
+      font-size: 12px;
+      color: #222222; }
+    .same3 .topword a:hover {
+      color: #DB3962; }
+  .same3 .bottomword {
+    position: absolute;
+    top: 300px;
+    padding: 12px 0 5px 0;
+    width: 200px;
+    height: 120px; }
+    .same3 .bottomword a {
+      width: 200px;
+      float: left;
+      margin-left: 30px;
+      margin-bottom: 10px;
+      font-size: 12px;
+      color: #222222; }
+    .same3 .bottomword a:hover {
+      color: #DB3962; }
+  .same3 .righttop {
+    float: left;
+    width: 600px;
+    height: 211px; }
+  .same3 .righttopleft {
+    float: left; }
+    .same3 .righttopleft img {
+      width: 299px;
+      height: 211px; }
+  .same3 .righttopright {
+    float: left; }
+    .same3 .righttopright img {
+      width: 301px;
+      height: 211px; }
+  .same3 .rightbottom {
+    height: 218px;
+    width: 600px; }
+  .same3 .rightbottomleft {
+    float: left; }
+    .same3 .rightbottomleft img {
+      width: 200px;
+      height: 218px; }
+  .same3 .rightbottomcenter {
+    float: left; }
+    .same3 .rightbottomcenter img {
+      width: 195px;
+      height: 218px; }
+  .same3 .rightbottomright {
+    float: left; }
+    .same3 .rightbottomright img {
+      width: 205px;
+      height: 218px; }
+
+.allday {
+  width: 1180px;
+  margin-bottom: 18px;
+  height: 116px; }
+  .allday img {
+    height: 116px;
+    width: 100%; }
+
+.same4 {
+  height: 429px;
+  margin-bottom: 18px; }
+  .same4 .left {
+    position: relative;
+    float: left;
+    width: 321px;
+    height: 429px;
+    background: url("http://www.dionly.com/images/home/line8/1.jpg") no-repeat center; }
+  .same4 .right {
+    float: left;
+    width: 259px;
+    height: 429px; }
+    .same4 .right img {
+      width: 259px;
+      height: 429px; }
+  .same4 .center {
+    float: left;
+    width: 600px;
+    height: 429px; }
+  .same4 .topword {
+    position: absolute;
+    top: 180px;
+    padding: 12px 0 5px 0;
+    width: 200px;
+    height: 120px; }
+    .same4 .topword a {
+      width: 200px;
+      float: left;
+      margin-left: 30px;
+      margin-bottom: 10px;
+      font-size: 12px;
+      color: #222222; }
+    .same4 .topword a:hover {
+      color: #DB3962; }
+  .same4 .bottomword {
+    position: absolute;
+    top: 300px;
+    padding: 12px 0 5px 0;
+    width: 200px;
+    height: 120px; }
+    .same4 .bottomword a {
+      width: 200px;
+      float: left;
+      margin-left: 30px;
+      margin-bottom: 10px;
+      font-size: 12px;
+      color: #222222; }
+    .same4 .bottomword a:hover {
+      color: #DB3962; }
+  .same4 .centertop {
+    float: left;
+    width: 600px;
+    height: 211px; }
+  .same4 .centertopleft {
+    float: left; }
+    .same4 .centertopleft img {
+      width: 299px;
+      height: 211px; }
+  .same4 .centertopright {
+    float: left; }
+    .same4 .centertopright img {
+      width: 301px;
+      height: 211px; }
+  .same4 .centerbottom {
+    height: 218px;
+    width: 600px; }
+  .same4 .centerbottomleft {
+    float: left; }
+    .same4 .centerbottomleft img {
+      width: 200px;
+      height: 218px; }
+  .same4 .centerbottomcenter {
+    float: left; }
+    .same4 .centerbottomcenter img {
+      width: 195px;
+      height: 218px; }
+  .same4 .centerbottomright {
+    float: left; }
+    .same4 .centerbottomright img {
+      width: 205px;
+      height: 218px; }
+
+.same5 {
+  height: 429px;
+  margin-bottom: 18px; }
+  .same5 .left {
+    position: relative;
+    float: left;
+    width: 321px;
+    height: 429px;
+    background: url("http://www.dionly.com/images/home/line10/1.jpg") no-repeat center; }
+  .same5 .right {
+    float: left;
+    width: 259px;
+    height: 429px; }
+    .same5 .right img {
+      width: 259px;
+      height: 429px; }
+  .same5 .center {
+    float: left;
+    width: 600px;
+    height: 429px; }
+  .same5 .topword {
+    position: absolute;
+    top: 180px;
+    padding: 12px 0 5px 0;
+    width: 200px;
+    height: 120px; }
+    .same5 .topword a {
+      width: 200px;
+      float: left;
+      margin-left: 30px;
+      margin-bottom: 10px;
+      font-size: 12px;
+      color: #222222; }
+    .same5 .topword a:hover {
+      color: #DB3962; }
+  .same5 .bottomword {
+    position: absolute;
+    top: 300px;
+    padding: 12px 0 5px 0;
+    width: 200px;
+    height: 120px; }
+    .same5 .bottomword a {
+      width: 200px;
+      float: left;
+      margin-left: 30px;
+      margin-bottom: 10px;
+      font-size: 12px;
+      color: #222222; }
+    .same5 .bottomword a:hover {
+      color: #DB3962; }
+  .same5 .centertop {
+    float: left;
+    width: 600px;
+    height: 211px; }
+  .same5 .centertopleft {
+    float: left; }
+    .same5 .centertopleft img {
+      width: 299px;
+      height: 211px; }
+  .same5 .centertopright {
+    float: left; }
+    .same5 .centertopright img {
+      width: 301px;
+      height: 211px; }
+  .same5 .centerbottom {
+    height: 218px;
+    width: 600px; }
+  .same5 .centerbottomleft {
+    float: left; }
+    .same5 .centerbottomleft img {
+      width: 200px;
+      height: 218px; }
+  .same5 .centerbottomcenter {
+    float: left; }
+    .same5 .centerbottomcenter img {
+      width: 195px;
+      height: 218px; }
+  .same5 .centerbottomright {
+    float: left; }
+    .same5 .centerbottomright img {
+      width: 205px;
+      height: 218px; }
+
+.news {
+  width: 100%;
+  height: 290px;
+  margin-bottom: 18px; }
+  .news .left {
+    margin-right: 10px;
+    width: 320px;
+    height: 288px;
+    border: 1px solid #E3E3E3;
+    float: left; }
+  .news .center {
+    margin-right: 10px;
+    width: 320px;
+    height: 288px;
+    border: 1px solid #E3E3E3;
+    float: left; }
+  .news .right {
+    margin-right: 10px;
+    width: 320px;
+    height: 288px;
+    border: 1px solid #E3E3E3;
+    float: left; }
+  .news .title {
+    width: 320px;
+    height: 33px;
+    background: url(../img/headbg.jpg);
+    font: 700 12px/33px "";
+    text-indent: 12px; }
+  .news .mainnews {
+    width: 100%;
+    height: 255px; }
+  .news .mainimg {
+    width: 100%;
+    height: 95px;
+    padding: 5px; }
+    .news .mainimg img {
+      width: 310px;
+      height: 95px; }
+  .news .mainlist {
+    width: 100%;
+    height: 135px; }
+    .news .mainlist ul {
+      margin-top: 6px;
+      margin-left: 28px;
+      width: 260px;
+      height: 135px; }
+    .news .mainlist li {
+      text-indent: -2px;
+      margin-bottom: 2px;
+      height: 27px;
+      list-style: disc;
+      font: 12px/27px ""; }
+  .news a {
+    color: #222; }
+  .news a:hover {
+    color: #DB3962; }
+  .news .rightimg {
+    float: right;
+    width: 184px;
+    height: 290px; }
+
+.footer {
+  width: 100%;
+  height: 280px;
+  margin-bottom: 18px; }
+  .footer .footertop {
+    height: 35px;
+    width: 100%;
+    background: url(../img/line.gif); }
+  .footer .footertopleft {
+    width: 385px;
+    height: 35px;
+    float: left;
+    padding-left: 15px;
+    font: 700 18px/35px ""; }
+  .footer .footertopright {
+    float: left;
+    width: 780px;
+    height: 35px; }
+    .footer .footertopright ul {
+      width: 780px;
+      height: 35px; }
+    .footer .footertopright li {
+      float: left;
+      width: 65px;
+      height: 35px;
+      cursor: pointer;
+      color: #222;
+      text-align: center;
+      font: 700 14px/35px ""; }
+    .footer .footertopright li:hover {
+      color: #8A0003; }
+    .footer .footertopright .select {
+      background: url(../img/select.gif) no-repeat bottom; }
+  .footer .shops {
+    display: none;
+    width: 100%;
+    height: 225px; }
+    .footer .shops .leftaddress {
+      border-left: 1px solid #6B6B6B;
+      border-bottom: 1px solid #6B6B6B;
+      float: left;
+      height: 100%;
+      width: 680px;
+      text-align: center;
+      background: url("http://www.dionly.com/images/footer/map.png") no-repeat center; }
+    .footer .shops .rightimg {
+      float: left;
+      width: 500px;
+      height: 100%; }
+  .footer .topword {
+    padding: 35px 0 25px 0;
+    height: 32px; }
+    .footer .topword a {
+      font: 700 20px/32px "";
+      color: #222; }
+    .footer .topword a:hover {
+      color: #DB3962; }
+  .footer .bottomword {
+    font: 14px/32px "";
+    color: #222;
+    margin-top: 30px; }
+  .footer .beijingimg {
+    background: url("http://www.dionly.com/images/footer/shops/beijing.jpg") no-repeat center; }
+  .footer .shenzhenimg {
+    background: url("http://www.dionly.com/images/footer/shops/shenzhen.jpg") no-repeat center; }
+  .footer .tianjinimg {
+    background: url("http://www.dionly.com/images/footer/shops/tianjin.jpg") no-repeat center; }
+  .footer .chengduimg {
+    background: url("http://www.dionly.com/images/footer/shops/chengdu.jpg") no-repeat center; }
+  .footer .zhejiangimg {
+    background: url("http://www.dionly.com/images/footer/shops/zhejiang.jpg") no-repeat center; }
+  .footer .jiangsuimg {
+    background: url("http://www.dionly.com/images/footer/shops/jiangsu.jpg") no-repeat center; }
+  .footer .fujianimg {
+    background: url("http://www.dionly.com/images/footer/shops/fujian.jpg") no-repeat center; }
+  .footer .hainanimg {
+    background: url("http://www.dionly.com/images/footer/shops/hainan.jpg") no-repeat center; }
+  .footer .chongqingimg {
+    background: url("http://www.dionly.com/images/footer/shops/chongqin.jpg") no-repeat center; }
+  .footer .hunanimg {
+    background: url("http://www.dionly.com/images/footer/shops/hunan.jpg") no-repeat center; }
+  .footer .hebeiimg {
+    background: url("http://www.dionly.com/images/footer/shops/hebei.jpg") no-repeat center; }
+  .footer .jiangxiimg {
+    background: url("http://www.dionly.com/images/footer/shops/jiangxi.jpg") no-repeat center; }
+  .footer .divshow {
+    display: block; }
+
+.registermain {
+  width: 100%;
+  height: 606px;
+  position: relative;
+  background: url("http://www.dionly.com/images/normal/reg.jpg") no-repeat center; }
+  .registermain .vipreg {
+    position: absolute;
+    right: 178px;
+    top: 72px;
+    color: #DB3962; }
+  .registermain .phone {
+    width: 158px;
+    height: 34px;
+    border: 0;
+    position: absolute;
+    right: 254px;
+    top: 135px;
+    font: 12px/34px ""; }
+  .registermain .code {
+    width: 92px;
+    height: 34px;
+    border: 0;
+    position: absolute;
+    right: 323px;
+    top: 189px;
+    font: 12px/34px ""; }
+  .registermain .codestyle {
+    width: 56px;
+    height: 34px;
+    border: 0;
+    position: absolute;
+    right: 258px;
+    top: 189px;
+    background-color: darkgray;
+    cursor: pointer;
+    font: 14px/34px "";
+    text-align: center; }
+  .registermain .changecode {
+    width: 35px;
+    height: 34px;
+    border: 0;
+    position: absolute;
+    right: 220px;
+    top: 189px;
+    cursor: pointer; }
+  .registermain .just-sth-tell-you {
+    width: 198px;
+    height: 34px;
+    border: 0;
+    position: absolute;
+    right: 224px;
+    top: 243px;
+    cursor: pointer;
+    font: 12px/34px "";
+    background-color: greenyellow;
+    opacity: 0; }
+  .registermain .fstpassword {
+    width: 168px;
+    height: 34px;
+    border: 0;
+    position: absolute;
+    right: 244px;
+    top: 298px;
+    font: 12px/34px ""; }
+  .registermain .secpassword {
+    width: 168px;
+    height: 34px;
+    border: 0;
+    position: absolute;
+    right: 244px;
+    top: 353px;
+    font: 12px/34px ""; }
+  .registermain .read {
+    height: 18px;
+    width: 300px;
+    font: 12px/18px "";
+    position: absolute;
+    right: 201px;
+    top: 396px; }
+    .registermain .read input {
+      margin-top: 5px; }
+    .registermain .read span {
+      cursor: pointer; }
+    .registermain .read span:hover {
+      color: #DB3962; }
+  .registermain .regbtn {
+    cursor: pointer;
+    width: 301px;
+    height: 38px;
+    position: absolute;
+    right: 211px;
+    top: 430px;
+    background: url("http://www.dionly.com/images/normal/regbutn.png") no-repeat center; }
+    .registermain .regbtn a {
+      width: 100%;
+      display: block;
+      height: 100%; }
+  .registermain .redreg {
+    cursor: pointer;
+    width: 301px;
+    height: 38px;
+    position: absolute;
+    right: 211px;
+    top: 430px;
+    background: url("http://www.dionly.com/images/normal/regbutn.png") no-repeat center; }
+  .registermain .grayreg {
+    cursor: pointer;
+    width: 301px;
+    height: 38px;
+    position: absolute;
+    right: 211px;
+    top: 430px;
+    background: url(../img/regbtn_1.png) no-repeat center; }
+  .registermain .logimg {
+    width: 315px;
+    height: 75px;
+    position: absolute;
+    right: 172px;
+    top: 516px; }
+    .registermain .logimg img {
+      float: left;
+      margin-right: 25px;
+      cursor: pointer; }
+    .registermain .logimg .qq {
+      width: 63px;
+      height: 24px;
+      margin-top: 16px; }
+  .registermain .reg-redword1 {
+    display: none;
+    position: absolute;
+    right: 294px;
+    top: 172px;
+    color: red;
+    height: 12px;
+    font: 12px/12px ""; }
+  .registermain .reg-redword1-1 {
+    display: none;
+    position: absolute;
+    right: 294px;
+    top: 172px;
+    color: red;
+    height: 12px;
+    font: 12px/12px ""; }
+  .registermain .reg-redword2 {
+    display: none;
+    position: absolute;
+    right: 188px;
+    top: 227px;
+    color: red;
+    height: 12px;
+    font: 12px/12px ""; }
+  .registermain .reg-redword3 {
+    display: none;
+    position: absolute;
+    right: 208px;
+    top: 336px;
+    color: red;
+    height: 12px;
+    font: 12px/12px ""; }
+  .registermain .reg-redword4 {
+    display: none;
+    position: absolute;
+    right: 268px;
+    top: 389px;
+    color: red;
+    height: 12px;
+    font: 12px/12px ""; }
+
+.boxinner {
+  display: none;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 730px;
+  height: 545px;
+  border: 1px solid #D7D2D1; }
+  .boxinner .toptitle {
+    border-bottom: 3px solid #A30101;
+    background-color: #FFD9D9;
+    height: 40px;
+    width: 100%;
+    cursor: move; }
+    .boxinner .toptitle h2 {
+      text-indent: 2em;
+      font: 700 14px/40px "";
+      width: 400px;
+      float: left;
+      height: 40px;
+      margin-top: 1px; }
+    .boxinner .toptitle a {
+      float: right;
+      width: 20px;
+      height: 20px;
+      font: 20px/20px "";
+      margin-top: 5px;
+      margin-right: 5px; }
+    .boxinner .toptitle a:hover {
+      color: red; }
+  .boxinner .content {
+    background-color: white;
+    height: 500px;
+    width: 100%; }
+    .boxinner .content p {
+      padding: 0 10px;
+      font: 12px/12px "";
+      word-break: break-word;
+      text-indent: 24px; }
+    .boxinner .content .first {
+      padding-top: 20px; }
+
+.loginmain {
+  width: 100%;
+  height: 588px;
+  margin-top: 6px;
+  background: url("http://www.dionly.com/images/normal/login.jpg") no-repeat center;
+  position: relative; }
+  .loginmain .rega {
+    position: absolute;
+    right: 178px;
+    top: 112px;
+    color: #DB3962; }
+  .loginmain .phonenum {
+    position: absolute;
+    right: 254px;
+    top: 176px;
+    height: 34px;
+    width: 162px;
+    border: 0; }
+  .loginmain .password {
+    position: absolute;
+    right: 254px;
+    top: 230px;
+    height: 34px;
+    width: 162px;
+    border: 0; }
+  .loginmain .logbtnimg {
+    cursor: pointer;
+    position: absolute;
+    right: 198px;
+    top: 308px;
+    height: 41px;
+    width: 321px; }
+  .loginmain .bottomline {
+    width: 330px;
+    height: 75px;
+    position: absolute;
+    right: 150px;
+    top: 410px; }
+    .loginmain .bottomline img {
+      margin-right: 20px; }
+  .loginmain .login-show1 {
+    display: none;
+    width: 86px;
+    height: 16px;
+    font: 12/16px "";
+    color: red;
+    position: absolute;
+    right: 320px;
+    top: 210px; }
+  .loginmain .login-show2 {
+    display: none;
+    width: 86px;
+    height: 16px;
+    font: 12/16px "";
+    color: red;
+    position: absolute;
+    right: 320px;
+    top: 266px; }
+  .loginmain .login-show3 {
+    display: none;
+    width: 86px;
+    height: 16px;
+    font: 12/16px "";
+    color: red;
+    position: absolute;
+    right: 320px;
+    top: 266px; }
+
+.passs {
+  width: 280px;
+  height: 24px;
+  position: absolute;
+  right: 222px;
+  top: 274px; }
+  .passs input {
+    float: left; }
+  .passs span {
+    width: 70px;
+    height: 24px;
+    float: left; }
+  .passs a {
+    width: 70px;
+    height: 24px;
+    float: right;
+    color: #222; }
+  .passs a:hover {
+    color: #D0383A; }
+
+.detailsmain {
+  margin-top: 5px;
+  background: #F1F1F1;
+  width: 100%; }
+  .detailsmain .topa {
+    height: 50px;
+    width: 100%;
+    font: 12px/50px ""; }
+    .detailsmain .topa a {
+      color: #222; }
+    .detailsmain .topa a:hover {
+      color: #DB3962; }
+    .detailsmain .topa span {
+      margin-left: 5px; }
+  .detailsmain .productpath {
+    border: 1px solid #D2D2D2;
+    border-top: 2px solid #FFC0C1;
+    padding-top: 17px;
+    background-color: white;
+    width: 100%;
+    height: 598px; }
+    .detailsmain .productpath .leftimg {
+      float: left;
+      width: 502px;
+      height: 564px;
+      margin-left: 20px;
+      position: relative;
+      border-right: 1px solid darkcyan; }
+  .detailsmain .smalltu {
+    width: 500px;
+    height: 420px;
+    position: relative; }
+    .detailsmain .smalltu img {
+      width: 500px;
+      height: 420px; }
+  .detailsmain .smalfang {
+    position: absolute;
+    background: rgba(2, 2, 2, 0.1);
+    left: 0px;
+    top: 0px;
+    visibility: hidden;
+    border: 1px solid #C0C0C0;
+    cursor: crosshair; }
+  .detailsmain .ulwrap {
+    margin-top: 20px;
+    position: relative;
+    width: 385px;
+    height: 92px;
+    overflow: hidden;
+    left: 64px; }
+  .detailsmain ul {
+    width: 650px;
+    height: 92px;
+    position: absolute;
+    left: 10; }
+    .detailsmain ul li {
+      width: 92px;
+      height: 92px;
+      float: left;
+      margin-right: 5px;
+      cursor: pointer; }
+    .detailsmain ul .redborder {
+      width: 92px;
+      height: 92px;
+      border: 1px solid #C11E20; }
+    .detailsmain ul img {
+      width: 90px;
+      height: 90px; }
+  .detailsmain button {
+    position: absolute;
+    width: 14px;
+    height: 30px;
+    border: 0;
+    background-color: white;
+    font: 30px/30px "";
+    bottom: 66px; }
+  .detailsmain .leftbtn {
+    left: 34px; }
+  .detailsmain .rightbtn {
+    right: 34px; }
+
+.detpng {
+  width: 100%;
+  height: 9740px; }
+  .detpng img {
+    width: 100%;
+    height: 100%; }
+
+.bigtu {
+  display: none;
+  width: 430px;
+  height: 420px;
+  position: absolute;
+  left: 584px;
+  top: 262px;
+  border: 1px solid sandybrown;
+  overflow: hidden; }
+  .bigtu img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 700px;
+    height: 600px; }
+
+.rightsthing {
+  float: right;
+  width: 600px;
+  height: 491px;
+  padding: 15px 5px; }
+  .rightsthing p {
+    font: 14px/26px "";
+    height: 26px;
+    width: 100%;
+    margin-left: 40px; }
+    .rightsthing p s {
+      font-weight: 700;
+      color: #8C8C8C; }
+  .rightsthing span {
+    color: #DB3962; }
+  .rightsthing .btncart {
+    width: 450px;
+    height: 60px;
+    border-top: 1px dashed #B9B9B9;
+    margin-left: 40px;
+    margin-top: 20px; }
+    .rightsthing .btncart img {
+      width: 126px;
+      height: 42px;
+      margin-top: 30px;
+      margin-left: 50px;
+      cursor: pointer;
+      float: left; }
+    .rightsthing .btncart .gotocart {
+      width: 126px;
+      height: 42px;
+      float: left;
+      border: 1px solid #ADFF2F;
+      background-color: #DB3962;
+      margin-top: 30px;
+      margin-left: 100px;
+      cursor: pointer;
+      font: 18px/42px "榛戜綋";
+      color: white;
+      text-align: center;
+      border-radius: 5px; }
+
+.cartmain {
+  padding-top: 20px;
+  background-color: #FEF1EF;
+  width: 100%;
+  padding-bottom: 20px; }
+  .cartmain .cartbox {
+    overflow: hidden;
+    width: 100%;
+    border-top: 3px solid #FFC0C1;
+    background-color: white;
+    padding: 10px 20px 0 20px; }
+  .cartmain .boxtop {
+    width: 1140px;
+    height: 41px;
+    background: url(../img/carticon.jpg) no-repeat left center;
+    border-bottom: 1px solid #DEDEDE;
+    font: 900 12px/41px "";
+    text-indent: 30px;
+    margin-bottom: 20px; }
+  .cartmain .boximg {
+    display: none;
+    width: 1178px;
+    height: 446px;
+    background: url("http://www.dionly.com/images/cart/cartnone.jpg") no-repeat center;
+    position: relative; }
+    .cartmain .boximg p {
+      width: 300px;
+      height: 30px;
+      font: 14px/30px "";
+      text-indent: 12px;
+      color: #888888;
+      border: 1px solid #CCCCCC;
+      background-color: #FEF1EF;
+      position: absolute;
+      top: 166px;
+      right: 210px; }
+  .cartmain .cartlist {
+    width: 1140px; }
+    .cartmain .cartlist ul {
+      width: 100%;
+      height: 40px; }
+    .cartmain .cartlist li {
+      height: 40px;
+      float: left;
+      font: 12px/40px "";
+      text-align: center; }
+    .cartmain .cartlist .licartimg {
+      width: 120px; }
+    .cartmain .cartlist .licartname {
+      width: 210px; }
+    .cartmain .cartlist .writeword {
+      width: 310px; }
+    .cartmain .cartlist .lastval {
+      width: 125px; }
+    .cartmain .cartlist .price {
+      width: 125px; }
+    .cartmain .cartlist .getmoney {
+      width: 125px; }
+    .cartmain .cartlist .del {
+      width: 125px; }
+  .cartmain .listbox {
+    width: 100%; }
+  .cartmain .cartli {
+    background-color: #EBEBEB;
+    width: 100%;
+    height: 120px; }
+  .cartmain .cartliimg {
+    width: 120px;
+    float: left;
+    height: 120px; }
+    .cartmain .cartliimg img {
+      width: 120px;
+      height: 120px; }
+  .cartmain .cartliname {
+    width: 210px;
+    float: left;
+    height: 120px;
+    font: 12px/120px "";
+    text-align: center; }
+  .cartmain .cartwriteword {
+    width: 310px;
+    float: left;
+    height: 120px;
+    font: 12px/120px "";
+    text-align: center; }
+  .cartmain .cartlastval {
+    width: 125px;
+    float: left;
+    height: 120px;
+    font: 12px/120px "";
+    text-align: center; }
+  .cartmain .cartprice {
+    width: 125px;
+    float: left;
+    height: 120px;
+    font: 12px/120px "";
+    text-align: center; }
+  .cartmain .cartgetmoney {
+    width: 125px;
+    float: left;
+    height: 120px;
+    font: 12px/120px "";
+    text-align: center; }
+  .cartmain .cartdel {
+    width: 125px;
+    float: left;
+    height: 120px;
+    font: 12px/120px "";
+    text-align: center;
+    cursor: pointer; }
+  .cartmain .cartdel:hover {
+    color: #D0383A; }
+  .cartmain .calculate {
+    margin-top: 20px;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 14px; }
+  .cartmain .allList {
+    width: 120px;
+    height: 30px;
+    float: left;
+    font: 14px/30px "";
+    color: #222; }
+    .cartmain .allList span {
+      font-weight: 700;
+      color: crimson; }
+  .cartmain .nomoney {
+    width: 100px;
+    height: 30px;
+    float: left;
+    font: 14px/30px "";
+    color: #222; }
+  .cartmain .nomoney:hover {
+    color: #DC143C; }
+  .cartmain .goindex {
+    width: 100px;
+    height: 30px;
+    float: left;
+    font: 14px/30px "";
+    color: #DC143C; }
+  .cartmain .gologin {
+    width: 50px;
+    height: 28px;
+    float: right;
+    font: 700 16px/28px "";
+    color: #A30101;
+    border: 1px solid #C11E20;
+    border-radius: 3px;
+    text-align: center; }
+  .cartmain .account {
+    width: 160px;
+    height: 30px;
+    float: right;
+    font: 14px/30px "";
+    color: #222; }
+    .cartmain .account span {
+      font-weight: 700;
+      color: #DC143C; }
+
+html, body {
+  height: 100%; }
+
+/*# sourceMappingURL=style.css.map */
